@@ -1,3 +1,22 @@
+
+#include<stdio.h>
+#include<conio.h>
+
+int arena[8][8];
+
+
+void initilize()
+{
+	int i, j;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			arena[i][j] = 0;
+		}
+	}
+}
+
 void prntArena()
 {
 	int i, j;
@@ -10,7 +29,6 @@ void prntArena()
 		printf("\n");
 	}
 }
-#include<stdio.h>
 
 //For backtracking
 int willAttack(int f1, int f2, int m1, int m2)
